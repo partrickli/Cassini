@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C0617DCF1E61706B00F2D825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DCE1E61706B00F2D825 /* AppDelegate.swift */; };
-		C0617DD11E61706B00F2D825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DD01E61706B00F2D825 /* ViewController.swift */; };
 		C0617DD41E61706B00F2D825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0617DD21E61706B00F2D825 /* Main.storyboard */; };
 		C0617DD61E61706B00F2D825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0617DD51E61706B00F2D825 /* Assets.xcassets */; };
 		C0617DD91E61706B00F2D825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0617DD71E61706B00F2D825 /* LaunchScreen.storyboard */; };
+		C0617DE21E61710400F2D825 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DE11E61710400F2D825 /* ImageViewController.swift */; };
+		C0617DE41E61714100F2D825 /* ImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DE31E61714100F2D825 /* ImageURLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0617DCB1E61706B00F2D825 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0617DCE1E61706B00F2D825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0617DD01E61706B00F2D825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0617DD31E61706B00F2D825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0617DD51E61706B00F2D825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0617DD81E61706B00F2D825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0617DDA1E61706B00F2D825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0617DE11E61710400F2D825 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		C0617DE31E61714100F2D825 /* ImageURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C0617DCD1E61706B00F2D825 /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				C0617DCE1E61706B00F2D825 /* AppDelegate.swift */,
-				C0617DD01E61706B00F2D825 /* ViewController.swift */,
+				C0617DE11E61710400F2D825 /* ImageViewController.swift */,
+				C0617DE31E61714100F2D825 /* ImageURLs.swift */,
 				C0617DD21E61706B00F2D825 /* Main.storyboard */,
+				C0617DE01E61709400F2D825 /* Supporting Files */,
+			);
+			path = Cassini;
+			sourceTree = "<group>";
+		};
+		C0617DE01E61709400F2D825 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0617DCE1E61706B00F2D825 /* AppDelegate.swift */,
 				C0617DD51E61706B00F2D825 /* Assets.xcassets */,
 				C0617DD71E61706B00F2D825 /* LaunchScreen.storyboard */,
 				C0617DDA1E61706B00F2D825 /* Info.plist */,
 			);
-			path = Cassini;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0617DD11E61706B00F2D825 /* ViewController.swift in Sources */,
+				C0617DE41E61714100F2D825 /* ImageURLs.swift in Sources */,
+				C0617DE21E61710400F2D825 /* ImageViewController.swift in Sources */,
 				C0617DCF1E61706B00F2D825 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
