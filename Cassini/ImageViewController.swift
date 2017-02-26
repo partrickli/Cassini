@@ -52,9 +52,6 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
-        if let cassini = internetURLs["cassini"] {
-            imageURL = URL(string: cassini)
-        }
     }
 
 }

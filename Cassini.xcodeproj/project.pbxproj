@@ -13,6 +13,7 @@
 		C0617DD91E61706B00F2D825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0617DD71E61706B00F2D825 /* LaunchScreen.storyboard */; };
 		C0617DE21E61710400F2D825 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DE11E61710400F2D825 /* ImageViewController.swift */; };
 		C0617DE41E61714100F2D825 /* ImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DE31E61714100F2D825 /* ImageURLs.swift */; };
+		C0617DE61E62BE3800F2D825 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0617DE51E62BE3800F2D825 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C0617DDA1E61706B00F2D825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0617DE11E61710400F2D825 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C0617DE31E61714100F2D825 /* ImageURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURLs.swift; sourceTree = "<group>"; };
+		C0617DE51E62BE3800F2D825 /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C0617DCD1E61706B00F2D825 /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
+				C0617DE51E62BE3800F2D825 /* CassiniViewController.swift */,
 				C0617DE11E61710400F2D825 /* ImageViewController.swift */,
 				C0617DE31E61714100F2D825 /* ImageURLs.swift */,
 				C0617DD21E61706B00F2D825 /* Main.storyboard */,
@@ -151,6 +154,7 @@
 				C0617DE41E61714100F2D825 /* ImageURLs.swift in Sources */,
 				C0617DE21E61710400F2D825 /* ImageViewController.swift in Sources */,
 				C0617DCF1E61706B00F2D825 /* AppDelegate.swift in Sources */,
+				C0617DE61E62BE3800F2D825 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
