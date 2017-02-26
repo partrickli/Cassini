@@ -10,6 +10,14 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    private let imageView = UIImageView()
+
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.contentSize = imageView.frame.size
+        }
+    }
+    
     var imageURL: URL? {
         didSet {
             image = nil
@@ -23,8 +31,8 @@ class ImageViewController: UIViewController {
                 let imageData = try Data(contentsOf: url)
                 image = UIImage(data: imageData)
             }
-        } catch {
-            print("some error happen when fetch image from Internet")
+        } catch let e {
+            print("some error happen when fetch image from Internet \(e)")
         }
     }
 
@@ -32,6 +40,7 @@ class ImageViewController: UIViewController {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
+            scrollView?.contentSize = imageView.frame.size
             
         }
         get {
@@ -39,11 +48,10 @@ class ImageViewController: UIViewController {
         }
     }
     
-    private let imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(imageView)
+        scrollView.addSubview(imageView)
         if let cassini = internetURLs["cassini"] {
             imageURL = URL(string: cassini)
         }
